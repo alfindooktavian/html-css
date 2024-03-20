@@ -1,69 +1,92 @@
-#styleTable {
-    width: 600px;
-    margin: auto;
-}
-
-#halo {
-    color: yellow;
-    font-size: 30px;
-}
-
-#header1 {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 350px;
+    margin-right:350px;
+    margin-top: 100px;
+  }
+  
+  header {
+    display: inline;
+  }
+  
+  .title {
+    font-size: 25px;
+    padding: 10px;
     background-color: blue;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 15px;    
-}
-
-#caption {
+    text-align: left;  
+  }
+  
+  h2 {
+    color: yellow;
+  }
+  
+  .title p {
     color: white;
-}
-
-#gambar {
-    width: 90px;
-}
-
-#tdlink {
-    padding-right: 100px;
-    padding-top: 5px;
-    padding-left: 10px;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  nav {
+    flex: 1;
+    margin-top: 20px;
     border-style: dashed;
-    vertical-align: text-top;
-}
-
-#biasa:link {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#biasa:visited {
-    text-decoration: none;
-    color: black;
-}
-
-#hoverrr:link {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#hoverrr:visited {
+    border-color: blue;
+  }
+  
+  nav ul {
+    padding-left: 0;
+  }
+  nav a {
+    padding: 15px;
     text-decoration: none;
     color: black;
-}
+  }
+  nav a.hover:hover {
+    color: lightblue;
+  }
+  
+  nav li {
+    list-style-type: none;
+    font-size: 25px;
+  }
+  
+  .content {
+    text-align: center;
 
-#hoverrr:hover {
-    color: cyan;
-}
+    flex: 5;
+    padding: 20px;
+  }
+  
+  .content-image img {
+    width: 250px;
+    height: auto;
+  }
+  .content-judul h1{
+    margin: 0%;
+    color: black;
+    font-size: 40pt;
+  }
 
-#isi {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#closingan {
-    background-color: cornflowerblue;
-    padding-right: 15px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+  .content-judul p {
+    margin: 0%;
+    font-size: 20pt;
+  }
+  .content-main p {
+    color: red;
+    font-size: 16pt;
+  }
+  footer {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: blue;
     text-align: right;
-}
+    font-weight: bold;
+  }
